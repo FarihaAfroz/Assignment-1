@@ -1,48 +1,189 @@
+body{
+    background-color: rgb(102, 50, 13);
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Default font */
+}
+.fancy-text {
+    font-family: 'Pacifico', cursive; /* Second font */
+}
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('fonts/Font1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('fonts/Font2.woff2') format('woff2');
+}
+
+body {
+    font-family: 'CustomFont1', sans-serif;
+}
+
+.fancy-text {
+    font-family: 'CustomFont2', serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+h1{
+    color: rgb(197, 196, 196);
     text-align: center;
+}
+.active{
+    background-color: #e2decb;
+    color: #ffffff;
+}
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-nav {
-    background: #78a6db;
-    padding: 10px;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: rgb(13, 1, 1);
+    background-color: #2a2929;
+    display: flex; /* Makes the list items appear in a row */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns items vertically */
+  }
+  
+  li {
+    margin: 0 15px; /* Adds spacing between menu items */
+  }
+  
+  li a {
+    display: block; /* Ensures the link takes up the full space */
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
-}
-h1 {
-    color: rgb(9, 9, 61);
-}
-a {
-    display: block;
-    margin: 10px;
-    text-decoration: none;
-    color: black;
-}
-img {
-    width: 300px;
-    height: auto;
-    margin: 10px;
-}
-.container {
-    display: flex;
+    text-align: center;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #d8c3c3;
+  }
+.logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+  }
+
+  .bgimg{
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 400px;
+    width: 1250px;
+    padding-top: 10px;
+  }
+  .img2{
+    height: 280px;
+    width: 280px;
+  }
+  p{
+    color: #ffffff;
+  }
+  .div1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    justify-content: center;
+    margin: auto;
+
+  }
+  .div2{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .div3{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding-left: 100px;
+  }
+  .div4{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 8;
+    grid-column-end: 8;
+
+  }
+  .div5{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 9;
+    grid-column-end: 10;
+    padding-left: 100px;
+
+  } 
+  .div6{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  } 
+.div7{
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end:5;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+.div8{
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    padding-left: 100px;
+  
 }
+.div9{
+    grid-row-start: 10;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    justify-content: center;
+    margin: auto; 
+}
+.div10{
+    grid-row-start: 13;
+    grid-row-end: 15;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+div.gallery {
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #ffffff;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }  
+ 
